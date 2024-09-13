@@ -1,0 +1,101 @@
+.card {
+    border: 1px solid #dadde1;
+    border-radius: 20px;
+    padding: 24px;
+    width: 888px;
+    height: 368px;
+    margin-bottom: 32px;
+
+    display: flex;
+    gap: 24px;
+}
+
+.card-img {
+    border-radius: 10px;
+    width: 292px;
+    height: 320px;
+    object-fit: cover;
+    
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.truck-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #101828;
+    margin-right: auto;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #101828;
+    margin-right: 12px;
+}
+
+.info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.info-part {
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    margin-right: 4px;
+}
+
+.description {
+    color: #475467;
+    margin-bottom: 24px;
+}
+
+.feature-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    
+    font-weight: 500;
+    border-radius: 100px;
+    padding: 12px 18px;
+    height: 48px;
+    background-color: #f2f4f7;
+    color: #101828;
+}
+
+.feature-icon {
+    margin-right: 8px;
+}
+
+
+.show-btn {
+    border-radius: 200px;
+    padding: 16px 41px;
+    width: 166px;
+    height: 56px;
+    background: #e44848;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+}

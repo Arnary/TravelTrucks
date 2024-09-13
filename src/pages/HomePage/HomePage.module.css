@@ -1,0 +1,44 @@
+.container {
+    background-image: image-set('/src/img/HomeBg.jpg' 1x, '/src/img/HomeBg@2x.jpg' 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    margin-left: 64px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 0.66667;
+    color: #f7f7f7;
+    margin-bottom: 16px;
+}
+
+.slogan {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #f7f7f7;
+    margin-bottom: 40px;
+}
+
+.view-btn {
+    border-radius: 200px;
+    padding: 16px 49px;
+    width: 173px;
+    height: 56px;
+    background: #e44848;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+}

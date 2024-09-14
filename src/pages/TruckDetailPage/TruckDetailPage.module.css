@@ -1,0 +1,66 @@
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.truck-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: var(--text-default-color);
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+.info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: var(--text-default-color);
+    margin-right: 12px;
+    margin-bottom: 28px;
+}
+
+.description {
+    color: #475467;
+    margin-bottom: 60px;
+}
+
+.info-detail-links {
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid rgb(209, 207, 207);
+}
+
+.links {
+    
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--text-default-color);
+    padding-bottom: 24px;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 0;
+}
+
+.active::after {
+    width: 100%;
+    height: 4px;
+    background-color: #e44848;
+    content: "";
+}

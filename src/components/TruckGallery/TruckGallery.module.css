@@ -1,0 +1,13 @@
+.gallery-list {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin-bottom: 28px;
+}
+
+.gallery-img {
+    border-radius: 10px;
+    width: 292px;
+    height: 312px;
+    object-fit: cover;
+}

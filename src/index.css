@@ -1,3 +1,11 @@
+:root {
+  --text-default-color: #101828;
+  --button-backgroung-color: #e44848;
+  --button-backgroung-color-hover: #d84343;
+  --active-nav-links: #d84343;
+  --categories-background: #f2f4f7;
+}
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
@@ -26,4 +34,8 @@ img {
 
 li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

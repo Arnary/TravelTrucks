@@ -1,0 +1,22 @@
+.feature-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    border-radius: 100px;
+    padding: 12px 18px;
+    height: 48px;
+    background-color: var(--categories-background);
+    color: var(--text-default-color);
+}
+
+.feature-icon {
+    margin-right: 8px;
+}

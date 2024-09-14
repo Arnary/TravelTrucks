@@ -1,0 +1,16 @@
+.info-icon {
+    margin-right: 4px;
+}
+
+.reviews-link {
+    color: var(--text-default-color);
+}
+
+.reviews-link:hover {
+    text-decoration: underline;
+}
+
+.info-part {
+    display: flex;
+    align-items: center;
+}

@@ -33,7 +33,7 @@
     padding: 16px 49px;
     width: 173px;
     height: 56px;
-    background: #e44848;
+    background: var(--button-backgroung-color);
     font-weight: 500;
     letter-spacing: -0.01em;
     color: #fff;
@@ -41,4 +41,9 @@
     align-items: center;
     flex-direction: row;
     border: none;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background: var(--button-backgroung-color-hover);
 }

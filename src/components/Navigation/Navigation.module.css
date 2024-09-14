@@ -31,7 +31,7 @@
 }
 
 .links {
-    color: #101828;
+    color: var(--text-default-color);
     text-decoration: none;
     font-weight: 500;
     text-align: center;
@@ -42,5 +42,5 @@
 }
 
 .active {
-    color: #d84343;
+    color: var(--active-nav-links);
 }

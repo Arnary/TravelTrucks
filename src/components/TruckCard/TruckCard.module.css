@@ -15,7 +15,6 @@
     width: 292px;
     height: 320px;
     object-fit: cover;
-    
 }
 
 .card-header {
@@ -29,7 +28,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 1.33333;
-    color: #101828;
+    color: var(--text-default-color);
     margin-right: auto;
 }
 
@@ -37,7 +36,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 1.33333;
-    color: #101828;
+    color: var(--text-default-color);
     margin-right: 12px;
 }
 
@@ -47,50 +46,17 @@
     margin-bottom: 24px;
 }
 
-.info-part {
-    display: flex;
-    align-items: center;
-}
-
-.info-icon {
-    margin-right: 4px;
-}
-
 .description {
     color: #475467;
     margin-bottom: 24px;
 }
-
-.feature-list {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-}
-
-.feature-item {
-    display: flex;
-    align-items: center;
-    
-    font-weight: 500;
-    border-radius: 100px;
-    padding: 12px 18px;
-    height: 48px;
-    background-color: #f2f4f7;
-    color: #101828;
-}
-
-.feature-icon {
-    margin-right: 8px;
-}
-
 
 .show-btn {
     border-radius: 200px;
     padding: 16px 41px;
     width: 166px;
     height: 56px;
-    background: #e44848;
+    background-color: var(--button-backgroung-color);
     font-weight: 500;
     letter-spacing: -0.01em;
     color: #fff;
@@ -98,4 +64,9 @@
     align-items: center;
     flex-direction: row;
     border: none;
+    cursor: pointer;
+}
+
+.show-btn:hover {
+    background-color: var(--button-backgroung-color-hover);
 }

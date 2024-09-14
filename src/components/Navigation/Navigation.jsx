@@ -15,7 +15,7 @@ const Navigation = () => {
                 <nav className={css.nav}>
                     <NavLink to="/" className={css.logo}>
                         <svg width="136" height="16">
-                            <use href="/src//img/icons.svg#icon-Logo"></use>
+                            <use href="/img/icons.svg#icon-Logo"></use>
                         </svg>
                     </NavLink>
                         <ul className={css["nav-list"]}>

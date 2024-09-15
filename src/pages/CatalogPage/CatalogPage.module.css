@@ -1,0 +1,12 @@
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    margin-bottom: 52px;
+    padding-left: 64px;
+    padding-right: 64px;
+
+    display: flex;
+    gap: 64px;
+}

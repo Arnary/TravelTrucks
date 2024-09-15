@@ -1,0 +1,18 @@
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-lable {
+    color: #6c717b;
+    margin-bottom: 8px;
+}
+
+.location-input {
+    border-radius: 12px;
+    padding: 18px 18px 18px 20px;
+    width: 360px;
+    height: 56px;
+    border: none;
+    background-color: #f7f7f7;
+}

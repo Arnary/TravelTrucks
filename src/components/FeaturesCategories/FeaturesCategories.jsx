@@ -1,4 +1,5 @@
 import css from "./FeaturesCategories.module.css";
+import Capitalize from "../../utils/Capitalize";
 
 
 const FeaturesCategories = ({truck}) => {
@@ -6,11 +7,11 @@ const FeaturesCategories = ({truck}) => {
         <ul className={css["feature-list"]}>
             <li className={css["feature-item"]}>
                 <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-diagram"></use></svg>
-                {truck.transmission?.charAt(0).toUpperCase() + truck.transmission?.slice(1)}
+                {Capitalize(truck.transmission)}
             </li>
             <li className={css["feature-item"]}>
                 <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-fuel-pump"></use></svg>
-                {truck.engine?.charAt(0).toUpperCase() + truck.engine?.slice(1)}
+                {Capitalize(truck.engine)}
             </li>
             {truck.kitchen && <li className={css["feature-item"]}>
                 <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-cup-hot"></use></svg>

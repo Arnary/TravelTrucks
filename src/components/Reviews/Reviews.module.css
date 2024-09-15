@@ -1,0 +1,41 @@
+.reviews-container {
+    width: 631px;
+}
+
+.review-item {
+    margin-bottom: 44px;
+}
+
+.avatar {
+    position: relative;
+    background-color: #f2f4f7;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.avatar-letter {
+    position: absolute;
+    top: 15px;
+    left: 21px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #e44848;
+}
+
+.review-title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.review-name {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.review-comment {
+    color: #475467;
+}

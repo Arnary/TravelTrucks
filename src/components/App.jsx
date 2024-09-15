@@ -6,10 +6,12 @@ import TruckDetailPage from '../pages/TruckDetailPage/TruckDetailPage';
 import Features from './Features/Features';
 import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
 import Reviews from './Reviews/Reviews';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
     return (
         <>
+            <Toaster />
             <Navigation />
                 <Routes>
                     <Route path='/' element={<HomePage />} />

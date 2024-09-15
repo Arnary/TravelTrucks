@@ -9,6 +9,7 @@ import TruckGallery from "../../components/TruckGallery/TruckGallery";
 import { useEffect, useState } from "react";
 import ImageModal from "../../components/ImageModal/ImageModal";
 import clsx from "clsx";
+import BookingForm from "../../components/BookingForm/BookingForm";
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(css.links, isActive && css.active);
@@ -47,19 +48,19 @@ const TruckDetailPage = () => {
             <TruckGallery truck={truck} openModal={openModal}/>
             <p className={css.description}>{truck.description}</p>
             <div className={css["info-detail-links"]}>
-                <NavLink className={buildLinkClass} to={`/catalog/${truckId}`} >Features</NavLink>
+                <NavLink className={buildLinkClass} to={`/catalog/${truckId}`} end >Features</NavLink>
                 <NavLink className={buildLinkClass} to="reviews" >Reviews</NavLink>
+            </div>
+            <div className={css["info-container"]}>
+                <Outlet />
+                <BookingForm />    
             </div>
             {isModalOpen && <ImageModal
                 closeModal={closeModal}
                 modalImg={modalImg}
             />}
-            <Outlet />
         </div>
     )
 }
 
 export default TruckDetailPage;
-
-
-//{`/catalog/${truckId}`}

@@ -3,10 +3,12 @@ import css from "./BookingForm.module.css";
 import DatePicker from "react-datepicker";
 import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
+import "./datepicker.css"
 import toast from 'react-hot-toast';
 
 const BookingForm = () => {
     const [startDate, setStartDate] = useState(null);
+    const [endDate, setEndDate] = useState(null);
 
     const initialValues = {
         username: "",
@@ -20,6 +22,7 @@ const BookingForm = () => {
             position: "bottom-right"
         });
         setStartDate(null);
+        setEndDate(null);
         action.resetForm();
     }
     
@@ -38,10 +41,17 @@ const BookingForm = () => {
                         placeholderText="Booking date*"
                         selected={startDate}
                         onChange={(date) => {
-                            setStartDate(date);
+                            const [start, end] = date;
+                            setStartDate(start);
+                            setEndDate(end);
                             setFieldValue('date', date);
                             }
                         }
+                        minDate={new Date()}
+                        startDate={startDate}
+                        endDate={endDate}
+                        selectsRange
+                        showDisabledMonthNavigation
                         required
                     />
                     <Field className={css.textarea} as="textarea" type="text" rows="3" name="comment" placeholder="Comment" />

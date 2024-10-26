@@ -1,3 +1,4 @@
 export default function Capitalize(value) {
-    return value?.charAt(0).toUpperCase() + value?.slice(1)    
+    const separated = value?.replace(/([a-z])([A-Z])/, '$1 $2');
+    return separated?.charAt(0).toUpperCase() + separated?.slice(1)    
 };

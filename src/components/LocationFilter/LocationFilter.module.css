@@ -1,6 +1,7 @@
 .location {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .location-lable {
@@ -10,9 +11,16 @@
 
 .location-input {
     border-radius: 12px;
-    padding: 18px 18px 18px 20px;
+    padding: 18px 18px 18px 48px;
     width: 360px;
     height: 56px;
     border: none;
     background-color: #f7f7f7;
+    position: relative;
+}
+
+.location-icon {
+    position: relative;
+    top: -37px;
+    left: 15px;
 }

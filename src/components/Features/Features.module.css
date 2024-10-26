@@ -4,4 +4,7 @@
     width: 631px;
     height: 588px;
     background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

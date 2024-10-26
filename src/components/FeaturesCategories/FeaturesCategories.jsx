@@ -26,12 +26,28 @@ const FeaturesCategories = ({truck}) => {
                 TV
             </li>}
             {truck.bathroom && <li className={css["feature-item"]}>
-                <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-bi_droplet"></use></svg>
+                <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-ph_shower"></use></svg>
                 Bathroom
             </li>}
             {truck.radio && <li className={css["feature-item"]}>
                 <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-ui-radios"></use></svg>
                 Radio
+            </li>}
+            {truck.refrigerator && <li className={css["feature-item"]}>
+                <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-solar_fridge-outline"></use></svg>
+                Refrigerator
+            </li>}
+            {truck.microwave && <li className={css["feature-item"]}>
+                <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-lucide_microwave"></use></svg>
+                Microwave
+            </li>}
+            {truck.gas && <li className={css["feature-item"]}>
+                <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-hugeicons_gas-stove"></use></svg>
+                Gas
+            </li>}
+            {truck.water && <li className={css["feature-item"]}>
+                <svg className={css["feature-icon"]} width="20px" height="20px"><use href="/img/icons.svg#icon-bi_droplet"></use></svg>
+                Water
             </li>}
         </ul>
     )

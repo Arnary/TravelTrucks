@@ -3,9 +3,6 @@
     border-radius: 20px;
     padding: 24px;
     width: 888px;
-    height: 368px;
-    margin-bottom: 32px;
-
     display: flex;
     gap: 24px;
 }
@@ -40,6 +37,14 @@
     margin-right: 12px;
 }
 
+.fav-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 .info {
     display: flex;
     gap: 16px;
@@ -53,7 +58,7 @@
 
 .show-btn {
     border-radius: 200px;
-    padding: 16px 41px;
+    padding: 16px 40px;
     width: 166px;
     height: 56px;
     background-color: var(--button-backgroung-color);

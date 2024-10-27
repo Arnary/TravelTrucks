@@ -8,6 +8,7 @@ import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
 import Reviews from './Reviews/Reviews';
 import { Toaster } from 'react-hot-toast';
 
+
 function App() {
     return (
         <>

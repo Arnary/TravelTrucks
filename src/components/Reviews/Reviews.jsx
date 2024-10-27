@@ -44,7 +44,6 @@ const Reviews = () => {
                     )
                 })}
             </ul>
-            
         </div>
     );
 };

@@ -40,7 +40,6 @@ const TruckDetailPage = () => {
       setModalImg(null);
     };
 
-
     if (isLoading) {
         return (
             <div className={css.loader}>

@@ -1,6 +1,7 @@
 import contryRevers from "../../utils/contryRevers";
 import css from "./TruckLocation.module.css";
 
+
 const TruckLocation = ({ truck }) => {
     return (
         <span className={css["info-part"]}>

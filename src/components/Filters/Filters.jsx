@@ -110,7 +110,6 @@ const Filters = () => {
                     <button className={css["search-btn"]} type="submit">Search</button>
                 </Form>
             </Formik>
-
         </div>
     )
 };

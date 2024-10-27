@@ -1,6 +1,7 @@
 import { NavLink, useParams } from "react-router-dom";
 import css from "./TruckRating.module.css";
 
+
 const TruckRating = ({ truck }) => {
     const { truckId } = useParams();
 

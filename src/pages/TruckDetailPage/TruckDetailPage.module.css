@@ -8,6 +8,12 @@
     padding-right: 64px;
 }
 
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
 .truck-title {
     font-weight: 600;
     font-size: 24px;
@@ -70,4 +76,9 @@
 .info-container {
     display: flex;
     gap: 40px;
+}
+
+.detail-error {
+    text-align: center;
+    font-size: large;
 }

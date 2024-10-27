@@ -32,11 +32,13 @@ const trucksSlice = createSlice({
                 state.allTrucks.push(...payload.items);
             }
             state.loading = false;
+            state.error = null;
 
             state.total = payload.total;
             state.morePages = state.allTrucks.length < state.total;
         })
         .addCase(fetchTrucks.rejected, (state) => {
+            state.allTrucks = [];
             state.error = true;
             state.loading = false;
             state.morePages = false;
@@ -48,6 +50,7 @@ const trucksSlice = createSlice({
 
             state.truckDetail = payload;
             state.loading = false;
+            state.error = null;
         })
         .addCase(fetchTruckById.rejected, (state) => {
             state.error = true;

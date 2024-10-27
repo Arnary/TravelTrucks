@@ -4,23 +4,16 @@ import { createSlice } from "@reduxjs/toolkit";
 const filtersSlice = createSlice({
     name: 'filters',
     initialState: {
-        // location: "",
-        // ac: false,
-        // automatic: false,
-        // kitchen: false,
-        // tv: false,
-        // bathroom: false,
-        // type: "",
         filter: {},
     },
     reducers: {
         setFilters: (state, { payload }) => {
+            for (const field in payload) {
+                if (payload[field] === false) {
+                    delete payload[field];
+                }
+            }
             state.filter = payload;
-            console.log(state.filter);
-        },
-        cleanFilters: (state) => {
-            state.filter = {};
-            console.log(state.filter);
         }
     }
     }
@@ -29,4 +22,4 @@ const filtersSlice = createSlice({
 export const filtersReducer = filtersSlice.reducer;
 
 export const selectFilter = state => state.filters.filter;
-export const {setFilters, cleanFilters} = filtersSlice.actions;
+export const {setFilters} = filtersSlice.actions;

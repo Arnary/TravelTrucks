@@ -4,12 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchTrucks } from "../../redux/trucksOps";
 import css from "./CatalogPage.module.css";
-import { selectPage } from "../../redux/trucksSlice";
+import { selectLoading, selectPage } from "../../redux/trucksSlice";
 import { selectFilter } from "../../redux/filtersSlice";
 
 
 const CatalogPage = () => {
     const page = useSelector(selectPage);
+    const isLoading = useSelector(selectLoading);
     const dispatch = useDispatch();
 
     const filter = useSelector(selectFilter);

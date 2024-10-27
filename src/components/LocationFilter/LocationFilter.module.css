@@ -23,4 +23,13 @@
     position: relative;
     top: -37px;
     left: 15px;
+    fill: black;;
+}
+
+.location-input[value='']+.location-icon {
+    fill: #6c717b;
+}
+
+.location-input:focus + .location-icon {
+    fill: black;
 }

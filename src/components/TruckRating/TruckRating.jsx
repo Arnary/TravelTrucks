@@ -9,9 +9,14 @@ const TruckRating = ({ truck }) => {
             <svg className={css["info-icon"]} width="16px" height="16px">
                 <use href="/img/icons.svg#icon-yellow-star"></use>
             </svg>
-            <NavLink className={css["reviews-link"]} to={truckId ? 'reviews' : `${truck.id}/reviews`}>
+            {truckId ?
+                <NavLink className={css["reviews-link"]} to='reviews'>
                 {truck.rating}({truck.reviews?.length} Reviews)
-            </NavLink>
+                </NavLink> :
+                <NavLink className={css["reviews-link"]} to={`${truck.id}/reviews`} target="_blank">
+                {truck.rating}({truck.reviews?.length} Reviews)
+                </NavLink>
+            }
         </span>
     )
 }

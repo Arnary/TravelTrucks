@@ -3,15 +3,15 @@ import LocationFilter from "../LocationFilter/LocationFilter";
 import css from "./Filters.module.css";
 import clsx from "clsx";
 import { useDispatch } from "react-redux";
-import { setFilters, cleanFilters } from "../../redux/filtersSlice";
+import { setFilters } from "../../redux/filtersSlice";
+import { resetPage } from "../../redux/trucksSlice";
 
 
 const Filters = () => {
     const dispatch = useDispatch();
 
     const handleSearch = (value) => {
-        // console.log(value);
-        // dispatch(cleanFilters());
+        dispatch(resetPage());
         dispatch(setFilters(value));
     }
 
@@ -21,11 +21,6 @@ const Filters = () => {
                 initialValues={{
                     location: "",
                     form: "",
-                    // AC: false,
-                    // transmission: "",
-                    // bathroom: false,
-                    // kitchen: false,
-                    // TV: false,
                 }}
                 onSubmit={handleSearch}
             >
@@ -84,7 +79,7 @@ const Filters = () => {
                     <h3 className={css["group-title"]}>Vehicle type</h3>
                     <fieldset className={clsx(css.group, css["radio-group"])}>
                         <label className={css["checkbox-wrapper"]}>
-                            <Field type="radio" name="form" value="van" className={css["checkbox-input"]} />
+                            <Field type="radio" name="form" value="panelTruck" className={css["checkbox-input"]} />
                             <div className={css["checkbox"]}>
                                 <svg width="32px" height="32px">
                                     <use href="/img/icons.svg#icon-bi_grid-1x2"></use>
